@@ -6,6 +6,7 @@ import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Footer from "../components/footer/Footer";
+import router from "./router"
 
 
 const AppRouter = () => {
@@ -14,15 +15,15 @@ const AppRouter = () => {
       <Routes>
         <Route element={
             <>
-            <Navbar/>
-            <Outlet/>
-            <Footer/>
+            <Navbar />
+            <Outlet />
+            <Footer />
             </>
         }>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/contacts" element={<Contact/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contacts" element={<Contact />} />
         </Route>
         <Route path="*" element={<NotFound/>}/>
       </Routes>

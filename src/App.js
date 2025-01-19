@@ -1,11 +1,13 @@
-import {Router, Routes, Route} from 'react-router-dom'
-import AppRouter from './router/AppRouter';
+import {RouterProvider} from 'react-router-dom';
 
+import {router} from "./router/router.js"
 
 function App() {
   return (
-   <AppRouter/>
-      
+    <RouterProvider
+    router={router}
+    fallbackElement={<div> Loading...</div> }/>
+
    
   );
 }

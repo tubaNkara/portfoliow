@@ -1,4 +1,6 @@
-import React from 'react'
+
+import "./About.scss"
+
 
 const About = () => {
   return (
@@ -86,24 +88,6 @@ const About = () => {
             </div>
           </div>
         </main>
-        {/* ABOUT FOOTER */}
-        <footer className="vertical">
-          <div className="social-icons">
-            <a href="#">
-              <i className="fab fa-twitter fa-2x" />
-            </a>
-            <a href="#">
-              <i className="fab fa-facebook fa-2x" />
-            </a>
-            <a href="#">
-              <i className="fab fa-instagram fa-2x" />
-            </a>
-            <a href="#">
-              <i className="fab fa-github fa-2x" />
-            </a>
-          </div>
-          <div className="copyright">© Copyright 2023</div>
-        </footer>
       </>
     </div>
   );
